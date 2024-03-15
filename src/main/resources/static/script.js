@@ -1,7 +1,8 @@
 
 function showMessage(message){
 	
-	$("#message-container-table").prepend(`<tr><td><b>${message.name} :</b>${message.content}</td></tr>`)
+	const formattedDateTime = new Date(message.date).toLocaleString();
+	$("#message-container-table").prepend(`<tr><td><b>${message.name} :</b>${message.content}</td><td class="date">${formattedDateTime}</td></tr>`)
 }
 
 function sendMessage(){

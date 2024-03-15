@@ -1,5 +1,7 @@
 package com.chat.app.controller;
 
+import java.time.LocalDateTime;
+
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +18,7 @@ public class MessageController {
 	@SendTo("/topic/return-to")
 	public Message getContent(@RequestBody Message message) {
 		
+		message.setDate(LocalDateTime.now());
 		try {
 			
 			Thread.sleep(2000);

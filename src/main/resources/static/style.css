@@ -1,3 +1,72 @@
 #name-from{
 	height:100vh;
 }
+/* style.css */
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container-fluid {
+    margin-top: 20px;
+}
+
+/* Styling for the name form */
+#name-from {
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+#name-value {
+    border-radius: 0;
+}
+
+/* Styling for the chat room */
+#chat-room {
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.card-body {
+    min-height: 300px;
+    overflow-y: auto;
+}
+
+#message-value {
+    border-radius: 0;
+}
+
+.table-responsive {
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+/* Styling for the message container table */
+#message-container-table {
+    width: 100%;
+}
+
+#message-container-table tr td {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+#message-container-table tr td.date {
+    text-align: right;
+}
+
+/* Styling for buttons */
+.btn {
+    border-radius: 0;
+    margin-left: 5px;
+}

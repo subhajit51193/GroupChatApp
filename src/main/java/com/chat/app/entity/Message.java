@@ -1,5 +1,7 @@
 package com.chat.app.entity;
 
+import java.time.LocalDateTime;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,4 +15,5 @@ public class Message {
 
 	private String name;
 	private String content;
+	private LocalDateTime date;
 }
